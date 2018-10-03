@@ -13,10 +13,6 @@ int checkMid(char* flagGuess, char* tid);
 // Taking argument as command line
 int main(int argc, char *argv[]) 
 {
-    if(geteuid() != 0){
-        printf("This application totally needs root permissions.");
-        return(4);
-    }
     int a, b, c;
     char userFlagGuess[14];
     
